@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import GoogleLogin from './GoogleLogin'
 
 const Register = ({ handleGoogleLogin }) => {
 
@@ -38,7 +39,7 @@ const Register = ({ handleGoogleLogin }) => {
             </form>
             <div>
                 <h3>Or</h3>
-                <button onClick={handleGoogleLogin}>Continue with Google</button>
+                <GoogleLogin />
             </div>
         </div>
     )

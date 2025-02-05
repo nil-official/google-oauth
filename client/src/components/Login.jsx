@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import GoogleLogin from './GoogleLogin'
 
-const Login = ({ handleGoogleLogin }) => {
+const Login = () => {
 
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
@@ -34,7 +35,7 @@ const Login = ({ handleGoogleLogin }) => {
             </form>
             <div>
                 <h3>Or</h3>
-                <button onClick={handleGoogleLogin}>Continue with Google</button>
+                <GoogleLogin />
             </div>
         </div>
     )
